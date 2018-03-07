@@ -56,6 +56,9 @@
     <Reference Include="MessageControl">
       <HintPath>reference\MessageControl.dll</HintPath>
     </Reference>
+    <Reference Include="PrintingLibrary">
+      <HintPath>reference\PrintingLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -71,7 +74,7 @@
       <HintPath>reference\TabControlEx.dll</HintPath>
     </Reference>
     <Reference Include="TTEDataGrid">
-      <HintPath>..\..\AssemblyClient\reference\TTEDataGrid.dll</HintPath>
+      <HintPath>reference\TTEDataGrid.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -338,12 +341,6 @@
     <Content Include="VI_SLIP.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PrintLibrary\PrintingLibrary.csproj">
-      <Project>{646603c6-730c-4f5b-98d7-0ad9fbf1ebef}</Project>
-      <Name>PrintingLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
