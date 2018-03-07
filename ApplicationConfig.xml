@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ScreenPrinter>
+  <ScannerParameters>
+    <SerialPort>COM5</SerialPort>
+    <BaudRate>9600</BaudRate>
+    <Parity>0</Parity>
+    <StopBits>1</StopBits>
+    <DataBits>8</DataBits>
+    <NewLineSymbol>\r</NewLineSymbol>
+  </ScannerParameters>
+  <OutputCOMPort>
+    <OutSerialPort>COM3</OutSerialPort>
+    <OutBaudRate>9600</OutBaudRate>
+    <OutParity>0</OutParity>
+    <OutStopBits>1</OutStopBits>
+    <OutDataBits>8</OutDataBits>
+  </OutputCOMPort>
+  <GlobalParameters>
+    <!--English = "US";SimplifiedChinese = "ZHS";TraditionalChinese = "ZHT";-->
+    <Language>ZHS</Language>
+    <IPAddress>127.0.0.1</IPAddress>
+    <Port>50100</Port>
+    <DLExtractPattern>^\S.*$</DLExtractPattern>
+    <SDLExtractPattern>^SN\d{12,13}$|\d{16}$</SDLExtractPattern>
+    <!--small panel pattern-->
+    <!--^SN\S*$|^\d{17}$-->
+    <MBNExtractPattern>^R\S*$</MBNExtractPattern>
+    <!--^(MBN)\S*$;[^(MBN)]*$-->
+    <EquipmentExtractPattern>^EQ\S.*$</EquipmentExtractPattern>
+    <TrayExtractPattern>^L\S.*$</TrayExtractPattern>
+    <OpacityValue>70</OpacityValue>
+    <!-- 悬浮框的位置   1071,675-->
+    <LocationXY>1071|675</LocationXY>
+    <MDAPath>C:\GWM_Document</MDAPath>
+    <OutputEnter>1</OutputEnter>
+    <DataOutputInterface>COM</DataOutputInterface>
+    <!--SendKey or COM-->
+    <LogInRegular>^(\S.*);(\S.*)$</LogInRegular>
+    <LogInType>USB</LogInType>
+    <!--COM/USB-->
+    <CheckListFolder>D:\CheckList\</CheckListFolder>
+    <!--\\192.168.2.55\files\-->
+    <GetCompStation></GetCompStation>
+    <!--if get the current station compname,this must be empty. if not, pls put in the station number which you want to get-->
+    <IsNeedCompColumn>Y</IsNeedCompColumn>
+    <IsGetAllCompByBom>Y</IsGetAllCompByBom>
+    <IsNeedInfoField>N</IsNeedInfoField>
+    <IsCheckLayer>N</IsCheckLayer>
+    <IsSelectWO>Y</IsSelectWO>
+    <IsCheckList>Y</IsCheckList>
+    <IsMaterialSetup>N</IsMaterialSetup>
+    <IsEquipSetup>N</IsEquipSetup>
+    <ScanSNType>COM</ScanSNType>
+    <!--COM/PFC-->
+    <RefreshWO>Y</RefreshWO>
+    <PRESS_TIMER>500</PRESS_TIMER>
+    <!--ms-->
+    <OK_CHANNEL_Open>01 05 00 00 FF 00 8C 3A</OK_CHANNEL_Open>
+    <OK_CHANNEL_CLOSE>01 05 00 00 00 00 CD CA</OK_CHANNEL_CLOSE>
+    <NG_CHANNEL_OPEN>01 05 00 01 FF 00 DD FA</NG_CHANNEL_OPEN>
+    <NG_CHANGE_CLOSE>01 05 00 01 00 00 9C 0A</NG_CHANGE_CLOSE>
+    <Upload_BARCODE>UP123456</Upload_BARCODE>
+    
+    <FilterByFileName>enable</FilterByFileName>
+    <!--enable/disable-->
+    <FileNamePattern>^(\S{7}) \S.*$</FileNamePattern>
+
+    <AUTH_TEAM></AUTH_TEAM>
+    <PrinterTypeName></PrinterTypeName><!--ZPL/-->
+    <PrintType>USB</PrintType><!--USB/COM-->
+    <PrintSerialPort>COM1</PrintSerialPort>
+
+    <IPI_STATUS_CHECK>ENABLE</IPI_STATUS_CHECK>
+    <!--ENABLE / DISABLE-->
+    <Production_Inspection_CHECK>ENABLE</Production_Inspection_CHECK>
+    <!--ENABLE / DISABLE-->
+    <Traveler_Slip>Enable</Traveler_Slip>
+      <!--Enable/Disable-->
+    <PCB_Magazine_Rack_Qty>4</PCB_Magazine_Rack_Qty>
+    <Temp_PartNo>RACKNUMBER</Temp_PartNo>
+    <TemplateFolder>E:\Projects\TTE\VI(config comp.)\WindowsFormsGUI\bin\Debug\Template Example.prn</TemplateFolder>
+
+    <ACTIVE_WORKORDER_LINE>disable</ACTIVE_WORKORDER_LINE>
+    <!--disable/enable-->
+  </GlobalParameters>
+  <Checklist>
+    <CHECKLIST_SOURCE>xml</CHECKLIST_SOURCE>
+    <!--table/xml-->
+    <CHECKLIST_IPAddress>127.0.0.1</CHECKLIST_IPAddress>
+    <CHECKLIST_Port>50200</CHECKLIST_Port>
+    <AUTH_CHECKLIST_APP_TEAM>IPQC,1;IPQC,1</AUTH_CHECKLIST_APP_TEAM>
+    <!--Supervisor,IPQC-->
+    <CHECKLIST_FREQ>M10,4;,0.1</CHECKLIST_FREQ>
+    <!--M10,4;,2!-->
+    <SHIFT_CHANGE_TIME>0800;1620</SHIFT_CHANGE_TIME>
+    <RESTORE_TREAD_TIMER>60</RESTORE_TREAD_TIMER>
+    <!--60s -->
+    <RESTORE_TIME>10</RESTORE_TIME>
+    <!-- 10mins -->
+  </Checklist>
+  <Graphics>
+    <LAYER_DISPLAY>TOP_GRAPHIC;BOT_GRAPHIC</LAYER_DISPLAY>
+  </Graphics>
+</ScreenPrinter>
