@@ -41,20 +41,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CommonLibrary">
-      <HintPath>..\reference\CommonLibrary.dll</HintPath>
+      <HintPath>reference\CommonLibrary.dll</HintPath>
     </Reference>
     <Reference Include="IMSApiDotNet">
-      <HintPath>..\reference\IMSApiDotNet.dll</HintPath>
+      <HintPath>reference\IMSApiDotNet.dll</HintPath>
     </Reference>
     <Reference Include="Interop.Excel">
-      <HintPath>..\reference\Interop.Excel.dll</HintPath>
+      <HintPath>reference\Interop.Excel.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="log4net">
-      <HintPath>..\reference\log4net.dll</HintPath>
+      <HintPath>reference\log4net.dll</HintPath>
     </Reference>
     <Reference Include="MessageControl">
-      <HintPath>..\reference\MessageControl.dll</HintPath>
+      <HintPath>reference\MessageControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -68,7 +68,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="TabControlEx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\reference\TabControlEx.dll</HintPath>
+      <HintPath>reference\TabControlEx.dll</HintPath>
     </Reference>
     <Reference Include="TTEDataGrid">
       <HintPath>..\..\AssemblyClient\reference\TTEDataGrid.dll</HintPath>
